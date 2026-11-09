@@ -114,6 +114,19 @@
             background: white;
             color: #2c3e50;
         }
+        button.contact-link {
+            font: inherit;
+            background: transparent;
+            cursor: pointer;
+        }
+        button.contact-link:hover {
+            background: white;
+            color: #2c3e50;
+        }
+        button.contact-link.is-copied {
+            background: white;
+            color: #2c3e50;
+        }
     </style>
 </head>
 <body>
@@ -178,7 +191,7 @@
             <h2>تواصل معنا</h2>
             <p>لأي استفسار أو دعم فني</p>
             <div class="contact-links">
-                <a href="mailto:info@vaqenoo.com" class="contact-link">📧 البريد الإلكتروني</a>
+                <button type="button" class="contact-link copy-mail" data-copy="info@vaqenoo.com">📧 البريد الإلكتروني</button>
                 <a href="https://wa.me/966548994259" class="contact-link">📱 واتساب</a>
             </div>
         </div>
@@ -236,5 +249,6 @@
             for (var t = 1; t <= 6; t++) setTimeout(hideCredit, t * 1000);
         })();
     </script>
+<script src="../assets/copy-mail.js" defer></script>
 </body>
 </html>
