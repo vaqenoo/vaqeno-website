@@ -1,122 +1,23 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>برامجنا - حلول ذكية</title>
-    <link rel="stylesheet" href="style.css">
+    <title>VAQENO | حلول ذكية</title>
+    <meta http-equiv="refresh" content="0; url=index.html">
+    <link rel="canonical" href="index.html">
+    <meta name="robots" content="noindex">
+    <style>
+        body{font-family:Tahoma,Arial,sans-serif;background:#f5faf8;color:#0b1220;display:grid;place-items:center;min-height:100vh;margin:0}
+        .box{text-align:center;padding:40px}
+        a{color:#0f9d6e;font-weight:bold}
+    </style>
 </head>
-<body class="programs-page">
-    <!-- HEADER -->
-    <header>
-        <div class="container header-flex">
-            <div class="logo-area">
-                <div class="logo-text">
-                    <span class="logo-title">حلول ذكية</span>
-                    <span class="logo-sub">برامج لحل مشاكلك</span>
-                </div>
-                <div class="logo-icon">
-                    <svg width="50" height="50" viewBox="0 0 100 100">
-                        <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" fill="none" stroke="#0ea5e9" stroke-width="4"/>
-                        <polygon points="50,20 80,37.5 80,62.5 50,80 20,62.5 20,37.5" fill="#0ea5e9" opacity="0.3"/>
-                        <polygon points="50,30 70,42 70,58 50,70 30,58 30,42" fill="#0ea5e9"/>
-                    </svg>
-                </div>
-            </div>
-            <nav>
-                <a href="index.html">الرئيسية</a>
-                <a href="programs.html" class="active">البرامج</a>
-                <a href="request.html">طلب تصميم</a>
-                <a href="index.html#contact">اتصل بنا</a>
-            </nav>
-            <div id="auth-section">
-                <a href="login.html" class="login-btn">تسجيل الدخول <span>👤</span></a>
-            </div>
-        </div>
-    </header>
-
-    <!-- PAGE HERO -->
-    <section class="page-hero">
-        <h1>برامجنا</h1>
-        <p>برامج عملية، سهلة الاستخدام، ومصممة لتجعل عملك أسهل.</p>
-    </section>
-
-    <!-- PROGRAMS LIST -->
-    <section class="programs-list">
-        <div class="container">
-            <div class="simple-programs-list">
-                <!-- 1 -->
-                <a href="programs/ExpiryTracker.html" class="program-item-link">
-                    <div class="program-item">
-                        <div class="program-icon program-icon-emoji">
-                            <span>⏰</span>
-                        </div>
-                        <div class="program-info">
-                            <h3>ExpiryTracker</h3>
-                            <p>متتبع انتهاء الصلاحية — تابع منتجاتك وتجنب انتهاء الصلاحية بدون ما تنسى</p>
-                            <span class="card-btn">عرض التفاصيل</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- 2 -->
-                <a href="programs/ProductCutterAI.html" class="program-item-link">
-                    <div class="program-item">
-                        <div class="program-icon program-icon-emoji">
-                            <span>✂️</span>
-                        </div>
-                        <div class="program-info">
-                            <h3>ProductCutterAI</h3>
-                            <p>قص الصور بالذكاء الاصطناعي — احذف خلفية المنتجات واحصل على صور احترافية</p>
-                            <span class="card-btn">عرض التفاصيل</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- 3 -->
-                <a href="programs/hsaabat-aos.html" class="program-item-link">
-                    <div class="program-item">
-                        <div class="program-icon program-icon-emoji">
-                            <span>🧮</span>
-                        </div>
-                        <div class="program-info">
-                            <h3>حاسبة اوس</h3>
-                            <p>حاسبة ذكية وسريعة — حلّل أرقامك واحسبها بسهولة</p>
-                            <span class="card-btn">عرض التفاصيل</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-strip">
-        <div class="container">
-            <h3>💡 عندك فكرة برنامج؟</h3>
-            <p>حوّل فكرتك إلى برنامج عملي ومتكامل معنا</p>
-            <a href="request.html" class="btn-primary">اطلب تصميم برنامجك</a>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <p>© 2026 جميع الحقوق محفوظة</p>
-        </div>
-    </footer>
-
-    <script>
-        (function() {
-            var user = JSON.parse(localStorage.getItem('loggedInUser'));
-            var section = document.getElementById('auth-section');
-            if (user && user.fullname) {
-                section.innerHTML = '<span class="welcome-msg">مرحباً ' + user.fullname + '</span> <button class="logout-btn" onclick="logout()">خروج</button>';
-            }
-        })();
-
-        function logout() {
-            localStorage.removeItem('loggedInUser');
-            window.location.href = 'index.html';
-        }
-    </script>
+<body>
+    <div class="box">
+        <p>جارٍ تحويلك إلى الصفحة الرئيسية…</p>
+        <p><a href="index.html">اضغط هنا إذا لم يتم التحويل</a></p>
+    </div>
+    <script>window.location.replace('index.html');</script>
 </body>
 </html>
