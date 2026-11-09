@@ -139,6 +139,7 @@ a { color: inherit; text-decoration: none; }
   transition: background .15s ease, color .15s ease;
 }
 .nav-links a:hover { background: var(--bg-mint); color: var(--brand-dark); }
+.nav-links a.active { color: var(--brand-dark); background: var(--bg-mint); font-weight: 700; }
 
 .header-actions { display: flex; align-items: center; gap: 10px; }
 
@@ -654,6 +655,122 @@ a { color: inherit; text-decoration: none; }
 }
 .contact-card b { display: block; font-size: 15px; }
 .contact-card span { color: var(--muted); font-size: 14px; direction: ltr; }
+
+/* ---------- Request form page ---------- */
+.form-page {
+  padding: 58px 0 84px;
+  background:
+    radial-gradient(800px 420px at 85% -10%, rgba(20, 184, 166, .12), transparent 60%),
+    radial-gradient(700px 400px at 10% 0%, rgba(15, 157, 110, .08), transparent 60%),
+    linear-gradient(180deg, #f6fbf9 0%, #ffffff 70%);
+}
+.form-layout {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 26px;
+  align-items: start;
+}
+.form-card {
+  background: #fff;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+.form-card h2 { margin: 0 0 6px; font-size: 23px; font-weight: 900; }
+.form-card .form-note { margin: 0 0 24px; color: var(--muted); font-size: 14px; }
+
+.field { margin-bottom: 16px; }
+.field label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-2);
+  margin-bottom: 7px;
+}
+.field .optional { color: var(--muted-2); font-weight: 500; font-size: 12.5px; }
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.field textarea { resize: vertical; min-height: 84px; line-height: 1.7; }
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(15, 157, 110, .13);
+}
+.field input::placeholder,
+.field textarea::placeholder { color: var(--muted-2); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-privacy { margin: 12px 0 0; font-size: 12.5px; color: var(--muted-2); text-align: center; }
+
+.form-msg {
+  margin-top: 14px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.form-msg-success { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+.form-msg-error { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+
+.side-card {
+  background: #fff;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+.side-card + .side-card { margin-top: 20px; }
+.side-card h3 { margin: 0 0 4px; font-size: 19px; font-weight: 900; }
+.side-card .side-sub { margin: 0 0 20px; color: var(--muted); font-size: 14px; }
+
+.timeline { position: relative; display: grid; gap: 14px; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 15px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--brand-soft), #e0f2fe);
+}
+.tl-item { position: relative; display: flex; align-items: center; gap: 12px; }
+.tl-num {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  font-weight: 800; font-size: 13px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  box-shadow: 0 4px 10px rgba(15, 157, 110, .25);
+  flex: 0 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.tl-label { font-size: 14.5px; font-weight: 600; color: var(--ink-2); }
+
+.side-contact p { margin: 0 0 16px; color: var(--muted); font-size: 14px; }
+
+@media (max-width: 1024px) {
+  .form-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .form-card { padding: 24px 18px; }
+  .side-card { padding: 22px 18px; }
+  .form-row { grid-template-columns: 1fr; }
+}
 
 /* ---------- Footer ---------- */
 .site-footer {
