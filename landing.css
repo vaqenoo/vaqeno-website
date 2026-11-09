@@ -499,6 +499,54 @@ a { color: inherit; text-decoration: none; }
   border-top: 1px solid rgba(255,255,255,.06);
 }
 
+/* ---------- TikTok ---------- */
+.tiktok-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 52px;
+  align-items: center;
+}
+.video-wrap { width: 100%; max-width: 360px; margin-inline: auto; }
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid rgba(15, 23, 42, .08);
+  box-shadow: var(--shadow-lg);
+}
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-note { margin: 12px 0 0; text-align: center; font-size: 12.5px; color: var(--muted-2); }
+
+.check-list { list-style: none; margin: 22px 0 28px; padding: 0; display: grid; gap: 11px; }
+.check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.check-list li::before {
+  content: "";
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--bg-mint) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'><path d='M20 6L9 17l-5-5'/></svg>") center/12px no-repeat;
+  border: 1px solid var(--brand-soft);
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+.tiktok-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+@media (max-width: 1024px) {
+  .tiktok-layout { grid-template-columns: 1fr; gap: 36px; }
+  .tiktok-copy { text-align: center; }
+  .check-list { max-width: 380px; margin-inline: auto; }
+  .tiktok-actions { justify-content: center; }
+}
+
 /* ---------- Steps ---------- */
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; counter-reset: step; }
 .step {
