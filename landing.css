@@ -418,6 +418,51 @@ a { color: inherit; text-decoration: none; }
 .feature-card h3 { margin: 0 0 8px; font-size: 19px; font-weight: 800; }
 .feature-card p { margin: 0; color: var(--muted); font-size: 15px; }
 
+/* ---------- Feature lists + split demo ---------- */
+.feature-list {
+  margin: 14px 0 0;
+  padding-inline-start: 20px;
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.8;
+}
+.feature-list li { margin-bottom: 6px; }
+.feature-list li::marker { color: var(--brand); }
+
+.split-demo {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px dashed var(--brand-soft);
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+}
+.sd-label { font-size: 13px; font-weight: 700; color: var(--muted); }
+.sd-input {
+  font-family: ui-monospace, Consolas, monospace;
+  direction: ltr;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 6px 14px;
+}
+.sd-arrow { color: var(--brand); font-size: 20px; font-weight: 700; }
+.split-demo .pill { font-size: 13px; padding: 6px 14px; }
+.sd-note {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted-2);
+}
+
 /* ---------- Screenshots ---------- */
 .shots-grid {
   display: grid;

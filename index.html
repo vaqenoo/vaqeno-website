@@ -36,6 +36,7 @@
             <nav class="nav-links" id="navLinks">
                 <a href="#home">الرئيسية</a>
                 <a href="#features">المميزات</a>
+                <a href="#dateentry">إدخال التاريخ</a>
                 <a href="#how">كيف يعمل</a>
                 <a href="#screens">لقطات</a>
                 <a href="#faq">الأسئلة</a>
@@ -198,6 +199,55 @@
         </div>
     </section>
 
+    <!-- ================= DATE ENTRY ================= -->
+    <section class="section" id="dateentry">
+        <div class="container">
+            <div class="section-head">
+                <span class="kicker">جديد في 3.008 · إدخال التاريخ</span>
+                <h2 class="h2">ثلاث طرق لإدخال التاريخ — اختر الأسرع لك</h2>
+                <p class="lead">صوّر التاريخ، أو اكتبه، أو اختره من التقويم — والنتيجة واحدة: تاريخ دقيق بلا أخطاء.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">📷</div>
+                    <h3>تصوير التاريخ بالكاميرا</h3>
+                    <p>وجّه الكاميرا إلى العبوة ليُقرأ التاريخ فوراً عبر محرك Google ML Kit المدمج — يعمل 100% بدون إنترنت.</p>
+                    <ul class="feature-list">
+                        <li>يفرّق بين تاريخ الإنتاج (PROD / MFG) وتاريخ الانتهاء (EXP / BB) ويختار الانتهاء تلقائياً.</li>
+                        <li>يعرض كل التواريخ المقروءة كأزرار للاختيار بلمسة واحدة.</li>
+                    </ul>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">⌨️</div>
+                    <h3>الكتابة الذكية السريعة</h3>
+                    <p>حقل واحد يفهم كل صيغ التاريخ ويقسّمها فوراً إلى يوم/شهر/سنة وسنة/شهر/يوم.</p>
+                    <ul class="feature-list">
+                        <li>يقبل الأرقام العربية (٢٠٢٦٠١٠٩) والإنجليزية (20260109).</li>
+                        <li>يفهم الأرقام المتصلة، والفواصل ( / - . )، والصيغ القصيرة مثل 090126 و01/2026.</li>
+                        <li>يتعرّف على أسماء الأشهر عربي وإنجليزي، ويقترح بداية الشهر أو نهايته.</li>
+                    </ul>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">📅</div>
+                    <h3>الاختيار من التقويم</h3>
+                    <p>تقويم شهري واضح لاختيار اليوم بسرعة، مع كل المميزات المعتادة.</p>
+                    <ul class="feature-list">
+                        <li>مرتبط لحظياً مع الحقل الذكي ومع الكاميرا.</li>
+                        <li>أي طريقة تستخدمها تنعكس فوراً في الحقل.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="split-demo reveal">
+                <span class="sd-label">تكتب</span>
+                <span class="sd-input">20260109</span>
+                <span class="sd-arrow">←</span>
+                <span class="pill">09/01/2026</span>
+                <span class="pill">2026/01/09</span>
+                <span class="sd-note">التقسيمان يظهران تحت الحقل مباشرة — اختر ما يناسبك بلمسة واحدة.</span>
+            </div>
+        </div>
+    </section>
+
     <!-- ================= SCREENSHOTS ================= -->
     <section class="section section-dark" id="screens">
         <div class="container">
@@ -294,6 +344,10 @@
                 <details open>
                     <summary>ما هو مراقب الصلاحية؟</summary>
                     <p>برنامج سطح مكتب لويندوز يتتبّع تواريخ انتهاء أصنافك وينبّهك قبلها بوقت كافٍ، مع نسخة أندرويد للجرد والمسح والمتابعة من الجوال.</p>
+                </details>
+                <details>
+                    <summary>كيف أضيف تاريخ الانتهاء؟</summary>
+                    <p>ثلاث طرق: تصوير التاريخ بالكاميرا (يقرأه بدون إنترنت ويميّز تاريخ الانتهاء عن تاريخ الإنتاج)، أو كتابته في الحقل الذكي بأي صيغة (٢٠٢٦٠١٠٩ أو 20260109 أو 09/01/2026 أو يناير 2026)، أو اختياره من التقويم. الطرق الثلاث متزامنة، وأي واحدة تستخدمها تتحدّث فوراً.</p>
                 </details>
                 <details>
                     <summary>هل يعمل بدون إنترنت؟</summary>
@@ -423,6 +477,7 @@
                 <div class="footer-col">
                     <h4>روابط سريعة</h4>
                     <a href="#features">المميزات</a>
+                    <a href="#dateentry">إدخال التاريخ</a>
                     <a href="#how">كيف يعمل</a>
                     <a href="#screens">لقطات من البرنامج</a>
                     <a href="#faq">الأسئلة الشائعة</a>
