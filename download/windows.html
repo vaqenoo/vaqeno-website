@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل VAQENO لويندوز — الإصدار 3.008</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/png" href="../programs/ExpiryTracker/main.png">
+    <meta http-equiv="refresh" content="2; url=https://github.com/vaqenoo/vaqeno-website/releases/download/v3.008/VAQENO-Setup-3.008.exe">
+    <link rel="stylesheet" href="../landing.css">
+</head>
+<body>
+    <main class="dl-page">
+        <div class="dl-box">
+            <img class="app-icon" src="../programs/ExpiryTracker/main.png" alt="VAQENO">
+            <h1>تحميل VAQENO لويندوز</h1>
+            <p>الإصدار 3.008 · سيبدأ التحميل تلقائياً<span class="dl-spinner"></span></p>
+            <a class="btn btn-primary btn-lg"
+               href="https://github.com/vaqenoo/vaqeno-website/releases/download/v3.008/VAQENO-Setup-3.008.exe">
+                اضغط هنا إذا لم يبدأ التحميل
+            </a>
+            <p class="dl-note">حجم الملف ≈ 214 MB · ويندوز 10/11 · تجربة 30 يوماً</p>
+        </div>
+    </main>
+
+    <script>
+        (function () {
+            var url = 'https://github.com/vaqenoo/vaqeno-website/releases/download/v3.008/VAQENO-Setup-3.008.exe';
+            function notify() {
+                var text = '⬇ تحميل جديد: VAQENO Windows (3.008) - ' + new Date().toLocaleString('ar-SA');
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://api.telegram.org/bot8232868159:AAEVaG9iHJNgSaKWj1XjFx3GCfaunzSTt1A/sendMessage');
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.send(JSON.stringify({ chat_id: 8814437947, text: text }));
+            }
+            notify();
+        })();
+    </script>
+</body>
+</html>
