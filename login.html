@@ -226,7 +226,7 @@
                 localStorage.setItem(key, String(total));
                 var text = '👥 زيارة جديدة! إجمالي الزيارات: ' + total + ' · متصل الآن: ' + realtime;
                 var xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://api.telegram.org/bot8232868159:AAEVaG9iHJNgSaKWj1XjFx3GCfaunzSTt1A/sendMessage');
+                xhr.open('POST', 'https://api.vaqenoo.com/send');
                 xhr.setRequestHeader('Content-Type', 'application/json');
                 xhr.send(JSON.stringify({ chat_id: 8814437947, text: text }));
             }
