@@ -1074,6 +1074,7 @@ button.contact-link.is-copied::after { content: " ✓"; font-weight: 700; }
 }
 
 /* 5 stats on wide screens */
-@media (max-width: 1100px) and (min-width: 981px) {
-  .stats-grid { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 1100px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid .stat:last-child { grid-column: 1 / -1; }
 }
