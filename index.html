@@ -229,6 +229,7 @@
             <div class="stat reveal"><b>180</b><span>يوماً أقصى مدة تنبيه</span></div>
             <div class="stat reveal"><b>4+</b><span>أجهزة متزامنة</span></div>
             <div class="stat reveal"><b>30</b><span>يوماً تجربة مجانية</span></div>
+            <div class="stat reveal"><b id="downloadCount">500+</b><span>تحميل</span></div>
         </div>
     </section>
 
@@ -789,5 +790,22 @@
         })();
     </script>
 <script src="assets/copy-mail.js" defer></script>
+    <script>
+        (function () {
+            var base = 500;
+            var el = document.getElementById('downloadCount');
+            if (!el) return;
+            fetch('https://api.github.com/repos/vaqenoo/vaqeno-website/releases', {
+                headers: { 'Accept': 'application/vnd.github+json' }
+            }).then(function (r) { return r.json(); }).then(function (releases) {
+                if (!Array.isArray(releases)) return;
+                var total = 0;
+                releases.forEach(function (rel) {
+                    (rel.assets || []).forEach(function (a) { total += (a.download_count || 0); });
+                });
+                el.textContent = (base + total).toLocaleString('en-US') + '+';
+            }).catch(function () {});
+        })();
+    </script>
 </body>
 </html>
