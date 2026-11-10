@@ -135,19 +135,6 @@
         }
     </script>
 
-    <script>
-        document.querySelectorAll('.download-btn').forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                var name = btn.getAttribute('data-program');
-                var ver = btn.getAttribute('data-version');
-                var msg = '⬇ تحميل جديد: ' + name + ' (' + ver + ') - ' + new Date().toLocaleString('ar-SA');
-                var xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://api.vaqenoo.com/send');
-                xhr.setRequestHeader('Content-Type', 'application/json');
-                xhr.send(JSON.stringify({ chat_id: 8814437947, text: msg }));
-            });
-        });
-    </script>
 
     <script src="https://icount.kr/c.js?id=msa884207-spec.github.io"></script>
     <script>
@@ -160,19 +147,7 @@
                 var n = document.querySelector('[data-icount="total"]');
                 if (t) t.textContent = d.today.pv.toLocaleString('en-US');
                 if (n) n.textContent = d.total.pv.toLocaleString('en-US');
-                notify(d.total.pv, d.realtime);
                 return true;
-            }
-            function notify(total, realtime) {
-                var key = 'vaqeno_icount_notified';
-                var last = parseInt(localStorage.getItem(key) || '0', 10);
-                if (total <= last) return;
-                localStorage.setItem(key, String(total));
-                var text = '👥 زيارة جديدة! إجمالي الزيارات: ' + total + ' · متصل الآن: ' + realtime;
-                var xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://api.vaqenoo.com/send');
-                xhr.setRequestHeader('Content-Type', 'application/json');
-                xhr.send(JSON.stringify({ chat_id: 8814437947, text: text }));
             }
             if (!fill()) setTimeout(fill, 2000);
         })();

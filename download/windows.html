@@ -23,18 +23,5 @@
         </div>
     </main>
 
-    <script>
-        (function () {
-            var url = 'https://github.com/vaqenoo/vaqeno-website/releases/download/v3.008/VAQENO-Setup-3.008.exe';
-            function notify() {
-                var text = '⬇ تحميل جديد: VAQENO Windows (3.008) - ' + new Date().toLocaleString('ar-SA');
-                var xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://api.vaqenoo.com/send');
-                xhr.setRequestHeader('Content-Type', 'application/json');
-                xhr.send(JSON.stringify({ chat_id: 8814437947, text: text }));
-            }
-            notify();
-        })();
-    </script>
 </body>
 </html>

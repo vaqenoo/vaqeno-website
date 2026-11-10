@@ -216,16 +216,8 @@
         /* Request form */
         (function () {
             var FORMSPREE_ENDPOINT = 'https://formspree.io/f/meaqddee';
-            var TELEGRAM_CHAT = '8814437947';
             var form = document.getElementById('designRequestForm');
             var msg = document.getElementById('formMsg');
-
-            function sendTelegram(text) {
-                var xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://api.vaqenoo.com/send');
-                xhr.setRequestHeader('Content-Type', 'application/json');
-                xhr.send(JSON.stringify({ chat_id: TELEGRAM_CHAT, text: text }));
-            }
 
             form.addEventListener('submit', function (e) {
                 e.preventDefault();
@@ -246,23 +238,6 @@
                 var requests = JSON.parse(localStorage.getItem('designRequests')) || [];
                 requests.push(request);
                 localStorage.setItem('designRequests', JSON.stringify(requests));
-
-                var typeLabels = {
-                    mobile: 'تطبيق جوال',
-                    desktop: 'برنامج كمبيوتر',
-                    web: 'موقع إلكتروني',
-                    management: 'نظام إدارة',
-                    other: 'غير ذلك'
-                };
-
-                sendTelegram(
-                    '📝 طلب برنامج جديد\n' +
-                    'الاسم: ' + request.name + '\n' +
-                    'الجوال: ' + request.phone + '\n' +
-                    'النوع: ' + (typeLabels[request.type] || request.type) + '\n' +
-                    'الفكرة: ' + (request.idea || '—') + '\n' +
-                    'المشكلة: ' + (request.problem || '—')
-                );
 
                 fetch(FORMSPREE_ENDPOINT, {
                     method: 'POST',
@@ -290,29 +265,6 @@
 
     <!-- Visitor tracking (hidden) -->
     <script src="https://icount.kr/c.js?id=msa884207-spec.github.io"></script>
-    <script>
-        (function() {
-            var siteId = 'msa884207-spec.github.io';
-            function fill() {
-                var d = window.iCountData && window.iCountData[siteId];
-                if (!d) return false;
-                notify(d.total.pv, d.realtime);
-                return true;
-            }
-            function notify(total, realtime) {
-                var key = 'vaqeno_icount_notified';
-                var last = parseInt(localStorage.getItem(key) || '0', 10);
-                if (total <= last) return;
-                localStorage.setItem(key, String(total));
-                var text = '👥 زيارة جديدة! إجمالي الزيارات: ' + total + ' · متصل الآن: ' + realtime;
-                var xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://api.vaqenoo.com/send');
-                xhr.setRequestHeader('Content-Type', 'application/json');
-                xhr.send(JSON.stringify({ chat_id: 8814437947, text: text }));
-            }
-            if (!fill()) setTimeout(fill, 2000);
-        })();
-    </script>
     <script>
         (function() {
             function hideCredit() {
