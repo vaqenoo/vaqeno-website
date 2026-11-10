@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة تواريخ انتهاء الصلاحية في المتاجر: دليل عملي لتقليل الهدر | VAQENO</title>
+    <meta name="description" content="دليل عملي لإدارة تواريخ انتهاء صلاحية المنتجات في البقالات والسوبرماركت والصيدليات: التسجيل عند الاستلام، قاعدة FEFO، التنبيهات المتدرجة، الجرد الدوري، والتصرف قبل الانتهاء لتقليل الخسائر.">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="canonical" href="https://vaqenoo.com/expiry-management-guide.html">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="VAQENO">
+    <link rel="icon" type="image/png" href="assets/vaqeno-icon-64.png">
+    <link rel="apple-touch-icon" href="assets/vaqeno-icon-180.png">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="VAQENO">
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:url" content="https://vaqenoo.com/expiry-management-guide.html">
+    <meta property="og:title" content="إدارة تواريخ انتهاء الصلاحية في المتاجر: دليل عملي لتقليل الهدر">
+    <meta property="og:description" content="ست خطوات عملية تحمي مخزونك من الانتهاء: التسجيل عند الاستلام، FEFO، تنبيهات متدرجة، جرد دوري، وتوثيق بالتقارير.">
+    <meta property="og:image" content="https://vaqenoo.com/assets/vaqeno-logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="landing.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "إدارة تواريخ انتهاء الصلاحية في المتاجر: دليل عملي لتقليل الهدر",
+          "description": "دليل عملي لإدارة تواريخ انتهاء صلاحية المنتجات في البقالات والسوبرماركت والصيدليات وتقليل خسائر المخزون المنتهي.",
+          "inLanguage": "ar",
+          "datePublished": "2026-11-10",
+          "dateModified": "2026-11-10",
+          "author": { "@id": "https://vaqenoo.com/#organization" },
+          "publisher": { "@id": "https://vaqenoo.com/#organization" },
+          "mainEntityOfPage": "https://vaqenoo.com/expiry-management-guide.html",
+          "image": "https://vaqenoo.com/assets/vaqeno-logo.png"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://vaqenoo.com/" },
+            { "@type": "ListItem", "position": 2, "name": "دليل إدارة تواريخ الانتهاء", "item": "https://vaqenoo.com/expiry-management-guide.html" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "ما هي قاعدة FEFO؟",
+              "acceptedAnswer": { "@type": "Answer", "text": "FEFO اختصار First Expired, First Out أي: الأقرب انتهاءً يُصرف أولاً. عند العرض أو الشحن، قدّم الأصناف ذات تاريخ الانتهاء الأقرب على الأحدث، لتقليل احتمال بقاء مخزون حتى ينتهي." }
+            },
+            {
+              "@type": "Question",
+              "name": "متى أبدأ الخصم على الأصناف القريبة من الانتهاء؟",
+              "acceptedAnswer": { "@type": "Answer", "text": "يعتمد على سرعة دوران الصنف، لكن قاعدة عملية: ابدأ خصماً بسيطاً قبل 30 يوماً للأصناف بطيئة الدوران، وزد الخصم قبل 7 أيام، واجعل التصرف النهائي (تحويل أو إرجاع للمورد) قبل يوم أو يومين." }
+            },
+            {
+              "@type": "Question",
+              "name": "هل يكفي الإكسل لإدارة تواريخ الانتهاء؟",
+              "acceptedAnswer": { "@type": "Answer", "text": "الإكسل أفضل من لا شيء، لكنه لا ينبّهك تلقائياً ولا يتزامن بين الأجهزة والفروع، ويعتمد على من يتذكر فتحه يومياً. برنامج مخصص للتنبيهات والمزامنة يقلل الأخطاء ويوفر وقت الجرد." }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="VAQENO">
+                <span class="brand-mark brand-mark-logo"><img src="assets/vaqeno-icon.png" alt=""></span>
+                <span class="brand-text">
+                    <span class="brand-name">VAQENO</span>
+                    <span class="brand-tag">حلول ذكية</span>
+                </span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">الرئيسية</a>
+                <a href="index.html#features">المميزات</a>
+                <a href="expiry-tracker-for-stores.html">برنامج المتاجر</a>
+                <a href="index.html#faq">الأسئلة</a>
+                <a href="request.html">اطلب برنامجك</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="index.html#download" class="btn btn-primary btn-sm">حمّل الآن</a>
+                <button class="nav-toggle" id="navToggle" aria-label="القائمة" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= INTRO ================= -->
+    <section class="section" style="padding-top:130px;">
+        <div class="container">
+            <div class="section-head">
+                <span class="kicker">دليل عملي · 10 نوفمبر 2026</span>
+                <h1 class="h2">كيف تدير تواريخ انتهاء الصلاحية وتقلّل هدر المنتجات؟</h1>
+                <p class="lead">
+                    كل صنف ينتهي على الرف هو خسارة مباشرة في المال وثقة العميل، وقد يكلّفك مخالفة أمام الجهات الرقابية.
+                    الخبر الجيد: أغلب هذه الخسائر يمكن منعها بنظام بسيط ومنتظم.
+                    هذا الدليل يشرح ست خطوات عملية لإدارة تواريخ الانتهاء في البقالات والسوبرماركت والصيدليات والمستودعات والمطاعم.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= STEPS ================= -->
+    <section class="section section-soft">
+        <div class="container">
+            <div class="section-head">
+                <span class="kicker">الخطوات الست</span>
+                <h2 class="h2">نظام يحمي مخزونك من الاستلام حتى البيع</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">1️⃣</div>
+                    <h3>سجّل التاريخ عند الاستلام — لا تؤجل</h3>
+                    <p>أخطر عادة هي تأجيل تسجيل التواريخ "حتى وقت فاضي". سجّل كل دفعة فور استلامها: امسح الباركود وأدخل تاريخ الانتهاء، أو صوّر التاريخ بالكاميرا. الدفعة غير المسجّلة هي قنبلة موقوتة في مستودعك.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">2️⃣</div>
+                    <h3>طبّق قاعدة FEFO في العرض والشحن</h3>
+                    <p>الأقرب انتهاءً يُصرف أولاً (First Expired, First Out). رتّب الرفوف والمستودع بحيث تكون الدفعات الأقدم في المتناول، وقدّمها عند البيع أو الشحن قبل الدفعات الأحدث.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">3️⃣</div>
+                    <h3>فعّل تنبيهات متدرجة بخطة تصرّف</h3>
+                    <p>التنبيه وحده لا يكفي — حدّد ماذا تفعل في كل مرحلة: قبل 30 يوماً راجع الكميات وخطط لخصم أو تحويل، قبل 7 أيام نفّذ الخصم أو التحويل لفرع أسرع دوراناً، قبل يوم تصرّف نهائياً حسب سياسة الإرجاع لدى المورد.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">4️⃣</div>
+                    <h3>اجعل الجرد دورياً وسريعاً</h3>
+                    <p>جرد أسبوعي للأصناف سريعة الدوران (ألبان، مخبوزات، لحوم) وشهري لبطيئة الدوران يكفي إذا كانت القائمة محدّثة. استخدم الجوال للمسح في الموقع بدل نقل الأوراق، وسجّل أي فرق فوراً.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">5️⃣</div>
+                    <h3>وحّد الرؤية بين الفروع والأجهزة</h3>
+                    <p>إذا كان لكل فرع قائمته الخاصة، ستضيع الصورة الكاملة. قائمة موحّدة متزامنة بين الكاشير والجوالات والفروع تكشف الأصناف الراكدة في فرع وتحوّلها لفرع يصرفها أسرع.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">6️⃣</div>
+                    <h3>وثّق بالتقارير واحتفظ بنسخ احتياطية</h3>
+                    <p>تقرير دوري (Excel أو PDF) يحميك أمام الجهات الرقابية ويكشف أنماط الهدر: أي الأصناف تنتهي أكثر؟ أي مورد تواريخه قصيرة؟ ابنِ قرارات الشراء على هذه الأرقام.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MISTAKES ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="kicker">أخطاء شائعة</span>
+                <h2 class="h2">ثلاثة أخطاء تتكرر في أغلب المتاجر</h2>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card reveal">
+                    <div class="pc-ic">🧠</div>
+                    <h3>الاعتماد على الذاكرة أو دفتر واحد</h3>
+                    <p>مع مئات الأصناف وتغيّر الموظفين، الذاكرة والدفاتر لا تكفي. تحتاج قائمة رقمية واحدة يرجع لها الجميع وتنبّههم تلقائياً.</p>
+                </div>
+                <div class="problem-card reveal">
+                    <div class="pc-ic">🔀</div>
+                    <h3>خلط تاريخ الإنتاج بتاريخ الانتهاء</h3>
+                    <p>بعض العبوات تحمل التاريخين معاً (MFG وEXP). قراءة التاريخ الخطأ تعني تنبيهات خاطئة ومنتجات منتهية تبقى على الرف.</p>
+                </div>
+                <div class="problem-card reveal">
+                    <div class="pc-ic">📦</div>
+                    <h3>خلط الدفعات دون تمييز</h3>
+                    <p>دفعة جديدة تُسكب فوق القديمة دون تسجيل تواريخ كل دفعة على حدة — فتُباع الأحدث وتبقى الأقدم حتى تنتهي.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section section-soft">
+        <div class="container">
+            <div class="section-head">
+                <span class="kicker">أسئلة متكررة</span>
+                <h2 class="h2">إجابات سريعة</h2>
+            </div>
+            <div class="faq">
+                <details open>
+                    <summary>ما هي قاعدة FEFO؟</summary>
+                    <p>اختصار First Expired, First Out أي: الأقرب انتهاءً يُصرف أولاً. عند العرض أو الشحن، قدّم الأصناف ذات تاريخ الانتهاء الأقرب على الأحدث، لتقليل احتمال بقاء مخزون حتى ينتهي.</p>
+                </details>
+                <details>
+                    <summary>متى أبدأ الخصم على الأصناف القريبة من الانتهاء؟</summary>
+                    <p>يعتمد على سرعة دوران الصنف، لكن قاعدة عملية: ابدأ خصماً بسيطاً قبل 30 يوماً للأصناف بطيئة الدوران، وزد الخصم قبل 7 أيام، واجعل التصرف النهائي (تحويل أو إرجاع للمورد) قبل يوم أو يومين.</p>
+                </details>
+                <details>
+                    <summary>هل يكفي الإكسل لإدارة تواريخ الانتهاء؟</summary>
+                    <p>الإكسل أفضل من لا شيء، لكنه لا ينبّهك تلقائياً ولا يتزامن بين الأجهزة والفروع، ويعتمد على من يتذكر فتحه يومياً. برنامج مخصص للتنبيهات والمزامنة يقلل الأخطاء ويوفر وقت الجرد.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="download-card reveal">
+                <img class="app-icon" src="programs/ExpiryTracker/main.png" alt="شعار مراقب الصلاحية">
+                <h2>طبّق الدليل تلقائياً مع مراقب الصلاحية</h2>
+                <p>برنامج VAQENO ينفّذ عنك التسجيل بالباركود والكاميرا، التنبيهات المتدرجة، المزامنة بين الأجهزة والفروع، والتقارير الجاهزة — جرّبه مجاناً 30 يوماً.</p>
+                <div class="dl-buttons">
+                    <a href="expiry-tracker-for-stores.html" class="btn btn-primary btn-lg">تعرّف على برنامج المتاجر</a>
+                    <a href="index.html#download" class="btn btn-dark btn-lg">حمّل الآن</a>
+                </div>
+                <div class="dl-note">بدون بطاقة ائتمان · يعمل بدون إنترنت · عربي وإنجليزي</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="brand">
+                        <span class="brand-mark brand-mark-logo"><img src="assets/vaqeno-icon.png" alt=""></span>
+                        <span class="brand-text">
+                            <span class="brand-name">VAQENO</span>
+                            <span class="brand-tag">حلول ذكية</span>
+                        </span>
+                    </a>
+                    <p class="footer-about">
+                        نبني برامج عملية تساعد الأفراد والمنشآت على إدارة عملهم اليومي بذكاء —
+                        بدقة أعلى، وجهد أقل، وبدون تعقيد.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <a href="index.html">الرئيسية</a>
+                    <a href="index.html#features">المميزات</a>
+                    <a href="expiry-tracker-for-stores.html">برنامج تتبع الصلاحية للمتاجر</a>
+                    <a href="index.html#faq">الأسئلة الشائعة</a>
+                    <a href="request.html">اطلب برنامجك</a>
+                </div>
+                <div class="footer-col">
+                    <h4>تواصل</h4>
+                    <a href="https://wa.me/966548994259" target="_blank" rel="noopener">واتساب: 0548994259</a>
+                    <a href="mailto:info@vaqenoo.com">info@vaqenoo.com</a>
+                    <a href="index.html#download">تحميل البرنامج</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 VAQENO — جميع الحقوق محفوظة.</span>
+                <span class="made">صُنع بعناية في السعودية 🇸🇦</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var toggle = document.getElementById('navToggle');
+            var links = document.getElementById('navLinks');
+            if (!toggle || !links) return;
+            toggle.addEventListener('click', function () {
+                var open = links.classList.toggle('open');
+                toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+            links.addEventListener('click', function (e) {
+                if (e.target.tagName === 'A') {
+                    links.classList.remove('open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        })();
+        (function () {
+            var items = document.querySelectorAll('.reveal');
+            if (!('IntersectionObserver' in window)) {
+                items.forEach(function (el) { el.classList.add('in'); });
+                return;
+            }
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            items.forEach(function (el) { io.observe(el); });
+        })();
+    </script>
+</body>
+</html>
