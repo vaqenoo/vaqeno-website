@@ -1078,3 +1078,23 @@ button.contact-link.is-copied::after { content: " ✓"; font-weight: 700; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .stats-grid .stat:last-child { grid-column: 1 / -1; }
 }
+
+/* ---------- Pricing poster (desktop) ---------- */
+.pricing-poster { display: none; }
+.poster-hotspot { position: absolute; display: block; border-radius: 999px; }
+.poster-hotspot:focus-visible { outline: 3px solid #fbbf24; outline-offset: 3px; }
+.hs-350 { left: 1.8%; top: 72.4%; width: 30.4%; height: 7.2%; }
+.hs-499 { left: 33.0%; top: 72.4%; width: 34.1%; height: 7.2%; }
+.hs-trial { left: 67.8%; top: 72.4%; width: 30.4%; height: 7.2%; }
+
+@media (min-width: 1025px) {
+  .pricing-poster {
+    display: block; position: relative; border-radius: 24px; overflow: hidden;
+    box-shadow: 0 24px 60px rgba(18,42,90,.18);
+  }
+  .pricing-poster img { display: block; width: 100%; height: auto; }
+  #pricing .section-head,
+  #pricing .pricing-grid,
+  #pricing .pricing-note,
+  #pricing .branches-cta { display: none; }
+}
