@@ -795,5 +795,20 @@
             }).catch(function () {});
         })();
     </script>
+
+    <!-- إشعارات التحميل (عبر وسيط آمن) -->
+    <script src="assets/notify.js"></script>
+    <script>
+        (function () {
+            document.querySelectorAll('.download-btn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    if (!window.vaqenoNotify) return;
+                    var name = btn.getAttribute('data-program') || 'VAQENO';
+                    var ver = btn.getAttribute('data-version') || '';
+                    window.vaqenoNotify('⬇️ تحميل جديد\n' + name + (ver ? ' · ' + ver : ''));
+                });
+            });
+        })();
+    </script>
 </body>
 </html>

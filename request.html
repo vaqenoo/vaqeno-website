@@ -195,6 +195,7 @@
     </footer>
 
     <!-- ================= SCRIPTS ================= -->
+    <script src="assets/notify.js"></script>
     <script>
         /* Mobile nav */
         (function () {
@@ -238,6 +239,24 @@
                 var requests = JSON.parse(localStorage.getItem('designRequests')) || [];
                 requests.push(request);
                 localStorage.setItem('designRequests', JSON.stringify(requests));
+
+                if (window.vaqenoNotify) {
+                    var typeLabels = {
+                        mobile: 'تطبيق جوال',
+                        desktop: 'برنامج كمبيوتر',
+                        web: 'موقع إلكتروني',
+                        management: 'نظام إدارة',
+                        other: 'غير ذلك'
+                    };
+                    window.vaqenoNotify(
+                        '📝 طلب برنامج جديد\n' +
+                        'الاسم: ' + (request.name || '—') + '\n' +
+                        'الجوال: ' + (request.phone || '—') + '\n' +
+                        'النوع: ' + (typeLabels[request.type] || request.type || '—') + '\n' +
+                        'الفكرة: ' + (request.idea || '—') + '\n' +
+                        'المشكلة: ' + (request.problem || '—')
+                    );
+                }
 
                 fetch(FORMSPREE_ENDPOINT, {
                     method: 'POST',
