@@ -1196,6 +1196,9 @@ button.contact-link.is-copied::after { content: " ✓"; font-weight: 700; }
   .shot-pair { grid-template-columns: 1fr; }
   .programs-grid { grid-template-columns: 1fr; }
 }
+@media (min-width: 981px) {
+  .programs-grid--3 { grid-template-columns: repeat(3, 1fr); }
+}
 @media (max-width: 760px) {
   .program-hero { padding: 30px 0 44px; }
   .program-hero h1 { font-size: 34px; }
