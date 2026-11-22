@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" width="1000" height="680" role="img" aria-label="برنامج TV Remote للكمبيوتر — نافذة بث شاشة التلفزيون مع تحكم بالماوس ولوحة المفاتيح">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/>
+      <stop offset="1" stop-color="#f5f3ff"/>
+    </linearGradient>
+    <linearGradient id="br4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="win4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111c34"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="scr4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="680" fill="url(#bg4)"/>
+  <circle cx="850" cy="110" r="200" fill="#7c3aed" opacity=".10"/>
+  <circle cx="120" cy="600" r="180" fill="#2563eb" opacity=".10"/>
+
+  <!-- window -->
+  <rect x="50" y="70" width="900" height="540" rx="18" fill="#0b1220" stroke="#c7d2fe" stroke-width="2"/>
+  <rect x="50" y="70" width="900" height="52" rx="18" fill="#0f172a"/>
+  <rect x="50" y="104" width="900" height="18" fill="#0f172a"/>
+  <circle cx="84" cy="96" r="7" fill="#f87171"/>
+  <circle cx="108" cy="96" r="7" fill="#fbbf24"/>
+  <circle cx="132" cy="96" r="7" fill="#34d399"/>
+  <text x="500" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" fill="#94a3b8">TV Remote — غرفة الجلوس</text>
+  <rect x="874" y="86" width="56" height="20" rx="10" fill="#1e293b"/>
+  <text x="902" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#34d399">متصل</text>
+
+  <!-- mirrored TV -->
+  <rect x="82" y="150" width="612" height="344" rx="12" fill="url(#win4)"/>
+  <rect x="94" y="162" width="588" height="320" rx="8" fill="url(#scr4)" opacity=".95"/>
+  <g transform="translate(388 322)" opacity=".95">
+    <circle r="52" fill="#ffffff" opacity=".18"/>
+    <path d="M-15 -26 L34 0 L-15 26 Z" fill="#ffffff"/>
+  </g>
+  <rect x="118" y="424" width="200" height="12" rx="6" fill="#ffffff" opacity=".85"/>
+  <rect x="118" y="448" width="128" height="9" rx="4.5" fill="#ffffff" opacity=".45"/>
+  <rect x="118" y="178" width="70" height="22" rx="11" fill="#0b1220" opacity=".5"/>
+  <circle cx="132" cy="189" r="5" fill="#f87171"/>
+  <text x="144" y="194" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ffffff">مباشر</text>
+
+  <!-- control panel -->
+  <rect x="712" y="150" width="216" height="344" rx="12" fill="#0f172a" stroke="#1e293b"/>
+  <text x="732" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b">تحكم سريع</text>
+  <circle cx="820" cy="252" r="46" fill="#101a30" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="820" cy="252" r="16" fill="url(#br4)"/>
+  <g>
+    <rect x="730" y="318" width="56" height="42" rx="10" fill="#1e293b"/>
+    <rect x="792" y="318" width="56" height="42" rx="10" fill="#1e293b"/>
+    <rect x="854" y="318" width="56" height="42" rx="10" fill="#1e293b"/>
+    <path d="M750 341h16l-8-10z" fill="#93c5fd"/>
+    <circle cx="820" cy="339" r="10" fill="none" stroke="#93c5fd" stroke-width="3"/>
+    <rect x="876" y="332" width="16" height="14" rx="3" fill="#93c5fd"/>
+  </g>
+  <rect x="730" y="378" width="180" height="10" rx="5" fill="#1e293b"/>
+  <rect x="730" y="378" width="118" height="10" rx="5" fill="url(#br4)"/>
+  <text x="730" y="412" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#64748b">الصوت</text>
+  <rect x="730" y="428" width="180" height="34" rx="9" fill="#111c30" stroke="#334155"/>
+  <text x="746" y="450" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#64748b">اكتب على التلفزيون…</text>
+
+  <!-- shortcuts -->
+  <g>
+    <rect x="82" y="516" width="180" height="58" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <rect x="94" y="528" width="34" height="24" rx="6" fill="#1e293b"/>
+    <text x="111" y="545" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#93c5fd">Ctrl</text>
+    <rect x="132" y="528" width="24" height="24" rx="6" fill="#1e293b"/>
+    <text x="144" y="545" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#93c5fd">H</text>
+    <text x="168" y="545" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#94a3b8">الرئيسية</text>
+    <text x="94" y="566" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#475569">اختصارات لوحة المفاتيح</text>
+  </g>
+  <g>
+    <rect x="278" y="516" width="180" height="58" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="294" y="542" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#94a3b8">ماوس + سكرول</text>
+    <text x="294" y="562" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#475569">نقر وسحب وتحريك</text>
+  </g>
+  <g>
+    <rect x="474" y="516" width="180" height="58" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="490" y="542" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#94a3b8">فتح التطبيقات</text>
+    <text x="490" y="562" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#475569">من قائمة التلفزيون</text>
+  </g>
+  <g>
+    <rect x="670" y="516" width="258" height="58" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <circle cx="694" cy="545" r="10" fill="#34d399"/>
+    <text x="712" y="542" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#94a3b8">اتصال مباشر على الشبكة</text>
+    <text x="712" y="562" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#475569">بدون إنترنت — بث مشفّر</text>
+  </g>
+
+  <text x="50" y="652" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" fill="#64748b">Windows 10 / 11 · بث حي · تحكم بالماوس ولوحة المفاتيح</text>
+</svg>
