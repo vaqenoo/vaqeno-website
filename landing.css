@@ -1205,3 +1205,11 @@ button.contact-link.is-copied::after { content: " ✓"; font-weight: 700; }
   .spec-grid { gap: 12px; }
   .spec b { font-size: 16px; }
 }
+/* Prevent wide media inside grid tracks from forcing horizontal overflow on mobile */
+.program-hero-grid > *,
+.programs-grid > *,
+.shot-pair > *,
+.dl-grid > *,
+.shots-grid > * { min-width: 0; }
+.program-hero-visual img,
+.program-cover img { max-width: 100%; }
