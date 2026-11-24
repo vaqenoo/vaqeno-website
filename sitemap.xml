@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://vaqenoo.com/programs.html</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -29,6 +29,46 @@
     </image:image>
     <image:image>
       <image:loc>https://vaqenoo.com/programs/tv-remote/tv-remote-desktop-2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://vaqenoo.com/abaaqira/shots/abaaqira-home.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://vaqenoo.com/abaaqira.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://vaqenoo.com/abaaqira/shots/abaaqira-welcome.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://vaqenoo.com/abaaqira/shots/abaaqira-home.png</image:loc>
+      <image:title>منصة عباقرة — التقدم محفوظ تلقائيًا</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vaqenoo.com/abaaqira/shots/abaaqira-lesson.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://vaqenoo.com/abaaqira/shots/abaaqira-teacher.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://vaqenoo.com/abaaqira/shots/abaaqira-rewards.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://vaqenoo.com/abaaqira/shots/abaaqira-mobile.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://vaqenoo.com/abaaqira/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://vaqenoo.com/abaaqira/shots/abaaqira-home.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://vaqenoo.com/abaaqira/shots/abaaqira-mobile.png</image:loc>
     </image:image>
   </url>
   <url>
